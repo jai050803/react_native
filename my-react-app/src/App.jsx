@@ -1,14 +1,20 @@
 import { useState } from 'react'
 
 function App() {
-  const fname = "Jai"
-  const lname = "Singh"
+  const fname = "jai"
+  const lname = "singh"
   return (
     <>
-        <h1>Hello {fname + " " + {lname}}</h1>
-        <h1>Hello {fname} {lname}</h1>
-        <h1>hello {`${fname} ${lname}`}</h1>
-        <h4>Your lucky number is {num}</h4>
+    <h1>{fname} {lname}</h1>
+    <h1>{fname + " " + lname}</h1>
+    <h1>{`${fname} ${lname}`}</h1>
+      <h1>Unordered list</h1>
+      <ul>
+        <li>samosa</li>
+        <li>jalebi</li>
+        <li>fafda</li>
+        <li>gulab jamun</li>
+      </ul>
     </>
   )
 }
