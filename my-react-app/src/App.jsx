@@ -1,28 +1,28 @@
 import React from "react";
 
-let text = "";
+let text;
 const now = new Date();
 const currentTime = now.getHours();
 
 const customStyle = {
-  color: "",
+  color: ""
 }
 
 if (currentTime<=12){
-  text = "Morning"
-  customStyle.color = "red"
+  text = "Morning";
+  customStyle.color = "red";
 } else if (currentTime>12 & currentTime<18){
-    text = "Afternoon"
-    customStyle.color = "blue"
+    text = "Afternoon";
+    customStyle.color = "blue";
 } else {
-  text = "evening"
-  customStyle = "Orange"
+  text = "evening";
+  customStyle.color = "orange";
 }
 
 function App() {
     return(
         <>
-            <h1>Good {text}</h1>
+            <h1 style={customStyle}>Good {text}</h1><hr style={customStyle}></hr>
         </>
     )
 }
