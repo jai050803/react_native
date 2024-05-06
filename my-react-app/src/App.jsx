@@ -1,31 +1,14 @@
 import React from "react";
+import ReactDOM from 'react-dom';
+import Heading from "./components/Heading";
 
-let text;
-const now = new Date();
-const currentTime = now.getHours();
-
-const customStyle = {
-  color: ""
-}
-
-if (currentTime<=12){
-  text = "Morning";
-  customStyle.color = "red";
-} else if (currentTime>12 & currentTime<18){
-    text = "Afternoon";
-    customStyle.color = "blue";
-} else {
-  text = "evening";
-  customStyle.color = "orange";
-}
-
-function App() {
-    return(
+function App(){
+    return (
         <>
-            <h1 style={customStyle}>Good {text}</h1><hr style={customStyle}></hr>
+            <Heading />
+            <p>this is component heading</p>
         </>
     )
 }
 
-export default App
-
+export default App;
