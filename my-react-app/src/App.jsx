@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom';
 import Heading, {Paragraph, List} from "./components/Heading";
 import Cards from "./components/Cards";
 
-var numbers = [2,3,4,5,8,9,20]
+var numbers = [5,10,15]
 
-function double(num){
-    return num*2
-}
+var newnumbers = [];
 
-console.log(numbers.map(double))
+function double(x){
+    newnumbers.push(x*2);
+};
+
+numbers.forEach(double)
+
+console.log(newnumbers)
 
 function App(){
     return (
