@@ -4,3 +4,4 @@ function double(num){
     return num*2
 }
 
+console.log(numbers.map(double))
